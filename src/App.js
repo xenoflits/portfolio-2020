@@ -1,26 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Portrait from './assets/portrait.jpg'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <section className="entrance">
+        <div className="entrance--left">
+          <h1>Hello there</h1>
+          <div>
+            <h2>My name is Soeradj Mahabiersing</h2>
+            <h2>And I am a Full Stack Developer</h2>
+          </div>
+          <div>
+            email linkedin github
+        </div>
+        </div>
+        <div className="entrance--right">
+          <img className="entrance--portrait" src={Portrait} alt="portrait"/>
+        </div>
+      </section>
+      <Wrapper />
     </div>
   );
+}
+const Wrapper = (props) => {
+  return (<main className="wrapper">
+    <About />
+    <Process />
+    <Qualifications />
+    <Projects />
+  </main>)
+}
+
+const About = () => {
+  return (<div className="about">
+    <h2>About</h2>
+  </div>)
+}
+
+const Process = () => {
+  return (<div className="process">
+    <h2>Process</h2>
+  </div>)
+}
+
+const Qualifications = () => {
+  return (<div className="qualifications">
+    <h2>Qualifications</h2>
+  </div>)
+}
+
+const Projects = () => {
+  return (<div className="projects">
+    <h2>Projects</h2>
+  </div>)
 }
 
 export default App;
