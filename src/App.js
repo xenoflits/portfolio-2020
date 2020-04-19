@@ -1,6 +1,9 @@
 import React from 'react';
 import Portrait from './assets/portrait.jpg'
-
+// import { library } from '@fortawesome/fontawesome-svg-core'
+import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function App() {
   return (
@@ -12,16 +15,25 @@ function App() {
             <p>My name is Soeradj Mahabiersing</p>
             <p>And I am a Full Stack Developer</p>
           </div>
-          <div>
-            email linkedin github
+          <div className="entrance--icons">
+          <div className="entrance--icon">
+            <FontAwesomeIcon icon={faMailBulk} />
+          </div>
+          <div className="entrance--icon">
+            <FontAwesomeIcon icon={faGithub} />
+          </div>
+          <div className="entrance--icon">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </div>
+          </div>
         </div>
-        </div>
-        <div className="entrance--right">
-          <img className="entrance--portrait" src={Portrait} alt="portrait"/>
-        </div>
+      
+      <div className="entrance--right">
+        <img className="entrance--portrait" src={Portrait} alt="portrait" />
+      </div>
       </section>
-      <Wrapper />
-    </div>
+    <Wrapper />
+    </div >
   );
 }
 const Wrapper = (props) => {

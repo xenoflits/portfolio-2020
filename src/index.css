@@ -58,6 +58,32 @@ code {
 .entrance--hey {
   font-size: 3rem;
 }
+
+.entrance--hey::after {
+  content: "";
+  background-color: white;
+  width: 253px;
+  height: 5px;
+  display: block;
+}
+
+.entrance--icon {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  margin: 10px;
+color: #2d545e;
+border-radius: 50%;
+border: 0.5px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.entrance--icons {
+  display: flex;
+}
+
 .entrance--right {
   padding-right: 100px;
   padding-top: 50px;
