@@ -38,16 +38,26 @@ function App() {
 }
 const Wrapper = (props) => {
   return (<main className="wrapper">
+    <div className="wrapper--left">
     <About />
     <Process />
     <Qualifications />
+    </div>
+    <div className="wrapper--right">
     <Projects />
+    </div>
   </main>)
 }
 
 const About = () => {
   return (<div className="about">
     <h2>About</h2>
+    <p>Started learning webdevelopment in 2016 besides my job in logistics. My ultimate goal to get a programming job later in my life,
+      I finished the Front End Certification at Free Code Camp in 2016, created a chatbot in the Chingu projects, together with 2 other
+      campers. After that I coded mostly in ReactJS.</p>
+    <p>With a big break for 3 years I decided to pick it back up again, getting the first 3 certificates at Free Code Camp. And coding every day
+      Currently started with my portfolio projects. 
+    </p>
   </div>)
 }
 

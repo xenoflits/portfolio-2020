@@ -31,9 +31,21 @@ code {
   background-color: #e1b382;
   height: 100vh;
   margin-top: -100px;
-  padding: 50px;
+  
   border-radius: 10px;
+  display: flex;
+}
 
+.wrapper--left{
+display: flex;
+flex-direction: column;
+width: 40%;
+}
+
+.wrapper--right{
+display: flex;
+flex-direction: column;
+width: 60%;
 }
 
 .entrance{
@@ -91,4 +103,28 @@ align-items: center;
 
 .entrance--portrait {
   width: 400px;
+}
+
+.about {
+background-color: #12343b;
+color: #e1b382;
+padding: 30px;
+}
+
+.qualifications {
+background-color: #12343b;
+color: #e1b382;
+padding: 30px;
+}
+
+.process{
+  padding: 10px;
+  color: #12343b;
+  padding: 30px;
+}
+
+.projects{
+  padding: 10px;
+  color: #12343b;
+  padding: 30px;
 }
