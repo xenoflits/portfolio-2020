@@ -7,10 +7,10 @@ function App() {
     <div className="app">
       <section className="entrance">
         <div className="entrance--left">
-          <h1>Hello there</h1>
-          <div>
-            <h2>My name is Soeradj Mahabiersing</h2>
-            <h2>And I am a Full Stack Developer</h2>
+          <h1 className="entrance--hey">Hello there</h1>
+          <div className="entrance--caption">
+            <p>My name is Soeradj Mahabiersing</p>
+            <p>And I am a Full Stack Developer</p>
           </div>
           <div>
             email linkedin github

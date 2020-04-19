@@ -1,3 +1,11 @@
+/*Sand Tan: #e1b382
+
+Sand Tan Shadow: #c89666
+
+Night Blue: #2d545e
+
+Night Blue Shadow: #12343b
+*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #c89666;
 }
 
 code {
@@ -19,29 +28,35 @@ code {
 }
 .wrapper {
   width: 1200px;
-  background-color: #AAA;
+  background-color: #e1b382;
   height: 100vh;
-  margin-top: -250px;
+  margin-top: -100px;
   padding: 50px;
-
+  border-radius: 10px;
 
 }
 
 .entrance{
   position: relative;
-  margin: 30px;
-  background-color: darkorange;
-  width: 1400px;
-  height: 700px;
+  margin: 20px;
+  background-color: #2d545e;
+  width: 1550px;
+  height: 600px;
   z-index: -1;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
 }
 
 .entrance--left {
   padding-left: 100px;
   padding-top: 100px;
   padding-right: 150px;
+}
+
+.entrance--hey {
+  font-size: 3rem;
 }
 .entrance--right {
   padding-right: 100px;
